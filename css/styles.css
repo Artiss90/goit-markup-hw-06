@@ -237,12 +237,24 @@ a {
   color: var(--text-white);
   font-style: normal;
 }
+
+/* Модалка (бланк-форма) */
+.modal {
+  position: relative;
+}
+.form-blank {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Герой */
 
 .hero-section {
   background-color: rgba(47, 48, 58, 0.8);
 }
-.overlay {
+.hero-section.overlay {
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
