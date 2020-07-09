@@ -102,17 +102,38 @@
       <div data-modal class="modal backdrop is-hidden">
         <form class="form-blank" action="">
           <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label for="name">Имя</label>
-          <input type="text" id="name" />
-          <label for="telephone">Телефон</label>
-          <input type="tel" id="telephone" />
-          <label for="mail">Почта</label>
-          <input type="email" id="mail" />
-          <label for="commentary"></label>
-          <textarea name="" id="commentary" cols="30" rows="10">Коментарий</textarea>
+          <label class="label" name="name">
+            <svg class="icon">
+              <use href="./images/sprite-modal.svg#icon-plagin-person"></use>
+            </svg>
+            <span class="text-field">Имя</span>
+            <input class="field" type="text" />
+          </label>
+          <label class="label" name="telephone">
+            <svg class="icon">
+              <use href="./images/sprite-modal.svg#icon-plagin-phone"></use>
+            </svg>
+            <span class="text-field">Телефон</span>
+            <input class="field" type="tel" />
+          </label>
+          <label class="label" name="mail">
+            <svg class="icon">
+              <use href="./images/sprite-modal.svg#icon-plagin-email"></use>
+            </svg>
+            <span class="text-field">Почта</span>
+            <input class="field" type="email" />
+          </label>
+          <label class="label" name="commentary">
+            <span class="text-commentary" text-commentary>Коментарий</span>
+            <textarea class="field commentary" name="commentary" rows="10"></textarea>
+          </label>
           <!-- Лицензионное соглашения в обратном порядке лейба и поле -->
-          <input type="checkbox" />
-          <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+          <label class="label-policy" name="policy">
+            <input class="checkbox" type="checkbox" />
+            <span class="text-policy"
+              >Соглашаюсь с рассылкой и принимаю <a class="link" href="">Условия договора</a></span
+            ></label
+          >
           <button class="button">Отправить</button>
           <button data-modal-close class="data-modal-close">
             <svg class="icon">
